@@ -5,6 +5,7 @@ A Python-based solution for computing optimal emergency evacuation routes using 
 ---
 
 ## 📑 Table of Contents
+
 - [About](#about)
 - [Features](#features)
 - [Repository Structure](#repository-structure)
@@ -19,25 +20,28 @@ A Python-based solution for computing optimal emergency evacuation routes using 
 ---
 
 ## 📖 About
-**Emergency Pathfinding** is an open-source project designed to explore and compare shortest-path algorithms in the context of emergency response and evacuation planning. The system allows simulation of routing scenarios, benchmarking of algorithms, and visualization of computed paths. 
+
+**Emergency Pathfinding** is an open-source project designed to explore and compare shortest-path algorithms in the context of emergency response and evacuation planning. The system allows simulation of routing scenarios, benchmarking of algorithms, and visualization of computed paths.
 
 This repository is intended for developers, researchers, and students interested in algorithmic route optimization and emergency navigation systems.
 
 ---
 
 ## ✨ Features
-* **Algorithm Support:**
-    * **A* Search:** Heuristic-based approach for faster, goal-oriented search.
-    * **Dijkstra’s Algorithm:** Guaranteed shortest path via uniform cost search.
-* **Emergency Simulation:** Model-specific routing for crisis scenarios.
-* **Performance Benchmarking:** Side-by-side metrics comparison.
-* **Interactive Visualization:** HTML-based maps for route inspection.
-* **Structured Data:** Exportable results in `.json` format for further analysis.
-* **Modular Code:** Easily extend with new algorithms or map data.
+
+- **Algorithm Support:**
+  - **A* Search:** Heuristic-based approach for faster, goal-oriented search.
+  - **Dijkstra's Algorithm:** Guaranteed shortest path via uniform cost search.
+- **Emergency Simulation:** Model-specific routing for crisis scenarios.
+- **Performance Benchmarking:** Side-by-side metrics comparison.
+- **Interactive Visualization:** HTML-based maps for route inspection.
+- **Structured Data:** Exportable results in `.json` format for further analysis.
+- **Modular Code:** Easily extend with new algorithms or map data.
 
 ---
 
 ## 📁 Repository Structure
+
 ```text
 .
 ├── main.py                    # Core pathfinding logic
@@ -51,15 +55,22 @@ This repository is intended for developers, researchers, and students interested
 └── README.md                  # Project documentation
 ```
 
-⚙️ Installation
-1. Clone the Repository
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/finddawood/emergency-pathfinding.git
 cd emergency-pathfinding
+```
 
-2. Set Up the Environment
+### 2. Set Up the Environment
 
 Python 3.8 or higher is recommended.
 
+```bash
 # Create virtual environment
 python3 -m venv venv
 
@@ -71,49 +82,58 @@ venv\Scripts\activate
 
 # Install dependencies
 pip install -r req.txt
+```
 
-🚀 Usage
-Run the Simulation
+---
+
+## 🚀 Usage
+
+### Run the Simulation
 
 Execute the main script:
 
+```bash
 python run.py
+```
 
-What Happens During Execution?
+### What Happens During Execution?
 
-Predefined emergency scenarios are loaded
+1. Predefined emergency scenarios are loaded
+2. Pathfinding algorithms are executed
+3. Performance metrics are saved to `results.json`
+4. Interactive HTML route visualizations are generated
 
-Pathfinding algorithms are executed
-
-Performance metrics are saved to results.json
-
-Interactive HTML route visualizations are generated
-
-View Results
+### View Results
 
 Open any generated HTML file in your web browser:
 
-route_astar_*.html
-route_dijkstra_*.html
+- `route_astar_*.html`
+- `route_dijkstra_*.html`
 
-📊 Performance Comparison
+---
 
-The system generates a performance_comparison.png file that visually compares execution time and efficiency between the implemented algorithms across multiple scenarios.
+## 📊 Performance Comparison
 
-📄 Example Outputs
+The system generates a `performance_comparison.png` file that visually compares execution time and efficiency between the implemented algorithms across multiple scenarios.
 
-results.json – Runtime, path length, nodes visited, and metadata
+---
 
-route_*.html – Interactive map-based route visualizations
+## 📄 Example Outputs
 
-performance_comparison.png – Benchmark comparison chart
+- **results.json** – Runtime, path length, nodes visited, and metadata
+- **route_*.html** – Interactive map-based route visualizations
+- **performance_comparison.png** – Benchmark comparison chart
 
-🛠️ Requirements
+---
 
-Python: 3.8 or higher
+## 🛠️ Requirements
 
-Dependencies: Listed in req.txt
+- **Python:** 3.8 or higher
+- **Dependencies:** Listed in `req.txt`
 
 Install all requirements with:
 
+```bash
 pip install -r req.txt
+```
+
