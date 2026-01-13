@@ -1,0 +1,318 @@
+[
+  {
+    "algorithm": "dijkstra",
+    "start_node": 25117016,
+    "hospital_node": 26889715,
+    "hospital_info": {
+      "name": "Universit\u00e4tsklinikum Carl Gustav Carus",
+      "lat": 51.0531,
+      "lon": 13.7421
+    },
+    "path": [
+      25117016,
+      1863922999,
+      25873151,
+      253342953,
+      899015791,
+      3608118635,
+      899013124,
+      899002751,
+      2572637253,
+      902631730,
+      2498001236,
+      25873142,
+      26889715
+    ],
+    "distance": 1352.5180000000003,
+    "runtime": 0.011387825012207031,
+    "memory": 0.8888015747070312,
+    "nodes_explored": 176,
+    "scenario_name": "City Center (Altstadt)"
+  },
+  {
+    "algorithm": "astar",
+    "start_node": 25117016,
+    "hospital_node": 26889715,
+    "hospital_info": {
+      "name": "Universit\u00e4tsklinikum Carl Gustav Carus",
+      "lat": 51.0531,
+      "lon": 13.7421
+    },
+    "path": [
+      25117016,
+      1863922999,
+      25873151,
+      253342953,
+      899015791,
+      3608118635,
+      899013124,
+      899002751,
+      2572637253,
+      902631730,
+      2498001236,
+      25873142,
+      26889715
+    ],
+    "distance": 1352.5180000000003,
+    "runtime": 0.06555700302124023,
+    "memory": 0.88653564453125,
+    "nodes_explored": 41,
+    "scenario_name": "City Center (Altstadt)"
+  },
+  {
+    "algorithm": "dijkstra",
+    "start_node": 250290094,
+    "hospital_node": 250290094,
+    "hospital_info": {
+      "name": "St\u00e4dtisches Klinikum Dresden-Neustadt",
+      "lat": 51.0657,
+      "lon": 13.7426
+    },
+    "path": [
+      250290094
+    ],
+    "distance": 0.0,
+    "runtime": 0.009028196334838867,
+    "memory": 0.88653564453125,
+    "nodes_explored": 1,
+    "scenario_name": "Neustadt District"
+  },
+  {
+    "algorithm": "astar",
+    "start_node": 250290094,
+    "hospital_node": 250290094,
+    "hospital_info": {
+      "name": "St\u00e4dtisches Klinikum Dresden-Neustadt",
+      "lat": 51.0657,
+      "lon": 13.7426
+    },
+    "path": [
+      250290094
+    ],
+    "distance": 0.0,
+    "runtime": 0.017187118530273438,
+    "memory": 0.88653564453125,
+    "nodes_explored": 1,
+    "scenario_name": "Neustadt District"
+  },
+  {
+    "algorithm": "dijkstra",
+    "start_node": 14959879,
+    "hospital_node": 14959879,
+    "hospital_info": {
+      "name": "St. Joseph-Stift Dresden",
+      "lat": 51.0267,
+      "lon": 13.7097
+    },
+    "path": [
+      14959879
+    ],
+    "distance": 0.0,
+    "runtime": 0.009303092956542969,
+    "memory": 0.88653564453125,
+    "nodes_explored": 1,
+    "scenario_name": "Plauen District"
+  },
+  {
+    "algorithm": "astar",
+    "start_node": 14959879,
+    "hospital_node": 14959879,
+    "hospital_info": {
+      "name": "St. Joseph-Stift Dresden",
+      "lat": 51.0267,
+      "lon": 13.7097
+    },
+    "path": [
+      14959879
+    ],
+    "distance": 0.0,
+    "runtime": 0.019250154495239258,
+    "memory": 0.88653564453125,
+    "nodes_explored": 1,
+    "scenario_name": "Plauen District"
+  },
+  {
+    "algorithm": "dijkstra",
+    "start_node": 33412295,
+    "hospital_node": 246850651,
+    "hospital_info": {
+      "name": "Diakonissenkrankenhaus Dresden",
+      "lat": 51.0423,
+      "lon": 13.8012
+    },
+    "path": [
+      33412295,
+      297481604,
+      297481607,
+      30151420,
+      939445173,
+      64814875,
+      33412229,
+      33412228,
+      33412294,
+      27768003,
+      257724205,
+      12961678,
+      18628643,
+      18628683,
+      246850569,
+      246850651
+    ],
+    "distance": 1540.5220000000002,
+    "runtime": 0.015228986740112305,
+    "memory": 0.88653564453125,
+    "nodes_explored": 351,
+    "scenario_name": "Striesen District"
+  },
+  {
+    "algorithm": "astar",
+    "start_node": 33412295,
+    "hospital_node": 246850651,
+    "hospital_info": {
+      "name": "Diakonissenkrankenhaus Dresden",
+      "lat": 51.0423,
+      "lon": 13.8012
+    },
+    "path": [
+      33412295,
+      297481604,
+      297481607,
+      30151420,
+      939445173,
+      64814875,
+      33412229,
+      33412228,
+      33412294,
+      27768003,
+      257724205,
+      12961678,
+      18628643,
+      18628683,
+      246850569,
+      246850651
+    ],
+    "distance": 1540.5220000000002,
+    "runtime": 0.10883784294128418,
+    "memory": 0.88653564453125,
+    "nodes_explored": 83,
+    "scenario_name": "Striesen District"
+  },
+  {
+    "algorithm": "dijkstra",
+    "start_node": 8203775056,
+    "hospital_node": 25694682,
+    "hospital_info": {
+      "name": "Krankenhaus Friedrichstadt Standort Trachau",
+      "lat": 51.0804,
+      "lon": 13.7089
+    },
+    "path": [
+      8203775056,
+      32967652,
+      25621138,
+      25621140,
+      25621145,
+      2453232134,
+      824109954,
+      824109969,
+      440348653,
+      21271513,
+      442828572,
+      442828559,
+      27254448,
+      27598012,
+      442832879,
+      27598015,
+      27254447,
+      335688683,
+      7128111105,
+      27186767,
+      3358925824,
+      3360334498,
+      9532153558,
+      3411671,
+      27185819,
+      27165546,
+      1912742210,
+      27165544,
+      27165545,
+      25935121,
+      3586307472,
+      2130820943,
+      772903570,
+      25935114,
+      27189004,
+      27282925,
+      3028550458,
+      3031031484,
+      25694686,
+      24953154,
+      25694680,
+      25694682
+    ],
+    "distance": 8998.705000000005,
+    "runtime": 0.026559829711914062,
+    "memory": 0.9062423706054688,
+    "nodes_explored": 1424,
+    "scenario_name": "Klotzsche District"
+  },
+  {
+    "algorithm": "astar",
+    "start_node": 8203775056,
+    "hospital_node": 25694682,
+    "hospital_info": {
+      "name": "Krankenhaus Friedrichstadt Standort Trachau",
+      "lat": 51.0804,
+      "lon": 13.7089
+    },
+    "path": [
+      8203775056,
+      32967652,
+      25621138,
+      25621140,
+      25621145,
+      2453232134,
+      824109954,
+      824109969,
+      440348653,
+      21271513,
+      442828572,
+      442828559,
+      27254448,
+      27598012,
+      442832879,
+      27598015,
+      27254447,
+      335688683,
+      7128111105,
+      27186767,
+      3358925824,
+      3360334498,
+      9532153558,
+      3411671,
+      27185819,
+      27165546,
+      1912742210,
+      27165544,
+      27165545,
+      25935121,
+      3586307472,
+      2130820943,
+      772903570,
+      25935114,
+      27189004,
+      27282925,
+      3028550458,
+      3031031484,
+      25694686,
+      24953154,
+      25694680,
+      25694682
+    ],
+    "distance": 8998.705000000005,
+    "runtime": 0.577888011932373,
+    "memory": 0.88653564453125,
+    "nodes_explored": 445,
+    "scenario_name": "Klotzsche District"
+  }
+]

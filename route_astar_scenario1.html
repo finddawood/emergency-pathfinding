@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e39c3bde674eaed45adca6417c79bf59 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e39c3bde674eaed45adca6417c79bf59" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e39c3bde674eaed45adca6417c79bf59 = L.map(
+                "map_e39c3bde674eaed45adca6417c79bf59",
+                {
+                    center: [51.0504944, 13.7372643],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0458039865064b92794b698ad4a15c89 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0458039865064b92794b698ad4a15c89.addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+            var marker_ccb09eb53137d284e127a8c7cabcebfd = L.marker(
+                [51.0504944, 13.7372643],
+                {}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+            var icon_b611077de2a67df501d6fbffa557d8fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ccb09eb53137d284e127a8c7cabcebfd.setIcon(icon_b611077de2a67df501d6fbffa557d8fe);
+        
+    
+        var popup_a31e7c07f7cf776ac4c16d1105b52bda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2f0d9509156b43b8312910a071e3064 = $(`<div id="html_a2f0d9509156b43b8312910a071e3064" style="width: 100.0%; height: 100.0%;"><b>Start Location</b></div>`)[0];
+                popup_a31e7c07f7cf776ac4c16d1105b52bda.setContent(html_a2f0d9509156b43b8312910a071e3064);
+            
+        
+
+        marker_ccb09eb53137d284e127a8c7cabcebfd.bindPopup(popup_a31e7c07f7cf776ac4c16d1105b52bda)
+        ;
+
+        
+    
+    
+            var marker_ab9e90b7e7bf5e4906088b116eaf5199 = L.marker(
+                [51.0531, 13.7421],
+                {}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+            var icon_bbcc7c77afc9f5c99a8f6462dba946f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ab9e90b7e7bf5e4906088b116eaf5199.setIcon(icon_bbcc7c77afc9f5c99a8f6462dba946f1);
+        
+    
+        var popup_d60607247f1aca6bf4ae535f97940f84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c7d675ee68b4c58825f1cd9e4be93e = $(`<div id="html_c3c7d675ee68b4c58825f1cd9e4be93e" style="width: 100.0%; height: 100.0%;"><b>Universitätsklinikum Carl Gustav Carus</b><br>Distance: 1353m<br>Algorithm: ASTAR</div>`)[0];
+                popup_d60607247f1aca6bf4ae535f97940f84.setContent(html_c3c7d675ee68b4c58825f1cd9e4be93e);
+            
+        
+
+        marker_ab9e90b7e7bf5e4906088b116eaf5199.bindPopup(popup_d60607247f1aca6bf4ae535f97940f84)
+        ;
+
+        
+    
+    
+            var poly_line_2d4f8e6c7202d36f53afc0db331e0689 = L.polyline(
+                [[51.0504944, 13.7372643], [51.051473, 13.7374713], [51.0518867, 13.7375454], [51.0520277, 13.7367396], [51.0522127, 13.7358628], [51.0527821, 13.7355936], [51.0532753, 13.7362232], [51.0546404, 13.7362789], [51.0549722, 13.736511], [51.0537525, 13.7401807], [51.0536897, 13.7401675], [51.052545, 13.7396957], [51.0523494, 13.7428087]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_b04c346783b7170515a41719cb8f6655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efdaa70807871c6df9bfc3441bbb7c52 = $(`<div id="html_efdaa70807871c6df9bfc3441bbb7c52" style="width: 100.0%; height: 100.0%;"><b>Route (ASTAR)</b><br>Distance: 1353m<br>Path nodes: 13</div>`)[0];
+                popup_b04c346783b7170515a41719cb8f6655.setContent(html_efdaa70807871c6df9bfc3441bbb7c52);
+            
+        
+
+        poly_line_2d4f8e6c7202d36f53afc0db331e0689.bindPopup(popup_b04c346783b7170515a41719cb8f6655)
+        ;
+
+        
+    
+    
+            var circle_marker_a7b940d9197b22dcb28eebfd0341576e = L.circleMarker(
+                [51.052, 13.717],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_9ccc84c6c9ea499135342cfa672c81a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c4a1d1b28bf04a680b53ac0676564a = $(`<div id="html_e0c4a1d1b28bf04a680b53ac0676564a" style="width: 100.0%; height: 100.0%;">Krankenhaus Dresden-Friedrichstadt</div>`)[0];
+                popup_9ccc84c6c9ea499135342cfa672c81a3.setContent(html_e0c4a1d1b28bf04a680b53ac0676564a);
+            
+        
+
+        circle_marker_a7b940d9197b22dcb28eebfd0341576e.bindPopup(popup_9ccc84c6c9ea499135342cfa672c81a3)
+        ;
+
+        
+    
+    
+            var circle_marker_057e025a0966866c52bd5a4ad8f97a0a = L.circleMarker(
+                [51.0657, 13.7426],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_774b6fb27b0e90c2ac83304bfc008997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18c20985260ad87b7c313cf351a1a82f = $(`<div id="html_18c20985260ad87b7c313cf351a1a82f" style="width: 100.0%; height: 100.0%;">Städtisches Klinikum Dresden-Neustadt</div>`)[0];
+                popup_774b6fb27b0e90c2ac83304bfc008997.setContent(html_18c20985260ad87b7c313cf351a1a82f);
+            
+        
+
+        circle_marker_057e025a0966866c52bd5a4ad8f97a0a.bindPopup(popup_774b6fb27b0e90c2ac83304bfc008997)
+        ;
+
+        
+    
+    
+            var circle_marker_178bcfa15c049452ac9bfdf6e7a882a5 = L.circleMarker(
+                [51.0267, 13.7097],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_b64dd4fba884041576ed482cbadbba13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d6afd4530c3883e9ddcd696ffb9f834 = $(`<div id="html_5d6afd4530c3883e9ddcd696ffb9f834" style="width: 100.0%; height: 100.0%;">St. Joseph-Stift Dresden</div>`)[0];
+                popup_b64dd4fba884041576ed482cbadbba13.setContent(html_5d6afd4530c3883e9ddcd696ffb9f834);
+            
+        
+
+        circle_marker_178bcfa15c049452ac9bfdf6e7a882a5.bindPopup(popup_b64dd4fba884041576ed482cbadbba13)
+        ;
+
+        
+    
+    
+            var circle_marker_eec34558d2863f44f48f46ca9a7f336c = L.circleMarker(
+                [51.0423, 13.8012],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_dfc1e36f16ea68c0461bfff7535911bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae1e598fe0f6de829f1a1e3f035cbb68 = $(`<div id="html_ae1e598fe0f6de829f1a1e3f035cbb68" style="width: 100.0%; height: 100.0%;">Diakonissenkrankenhaus Dresden</div>`)[0];
+                popup_dfc1e36f16ea68c0461bfff7535911bd.setContent(html_ae1e598fe0f6de829f1a1e3f035cbb68);
+            
+        
+
+        circle_marker_eec34558d2863f44f48f46ca9a7f336c.bindPopup(popup_dfc1e36f16ea68c0461bfff7535911bd)
+        ;
+
+        
+    
+    
+            var circle_marker_0b690fee37eeb4cd80d4f2501b95a971 = L.circleMarker(
+                [51.0804, 13.7089],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_01ce7c6087a513af43c5fd204f9f5cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d01f2d284c5824aaea25e5e1560020f = $(`<div id="html_5d01f2d284c5824aaea25e5e1560020f" style="width: 100.0%; height: 100.0%;">Krankenhaus Friedrichstadt Standort Trachau</div>`)[0];
+                popup_01ce7c6087a513af43c5fd204f9f5cf9.setContent(html_5d01f2d284c5824aaea25e5e1560020f);
+            
+        
+
+        circle_marker_0b690fee37eeb4cd80d4f2501b95a971.bindPopup(popup_01ce7c6087a513af43c5fd204f9f5cf9)
+        ;
+
+        
+    
+    
+            var circle_marker_4d112761b9b40869de412ee86c438f04 = L.circleMarker(
+                [51.1082, 13.6583],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_59753b0b3f3c3de5df01562cccd90367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc1ad3fb229a959ef241878ba6fd944e = $(`<div id="html_fc1ad3fb229a959ef241878ba6fd944e" style="width: 100.0%; height: 100.0%;">Elblandklinikum Radebeul</div>`)[0];
+                popup_59753b0b3f3c3de5df01562cccd90367.setContent(html_fc1ad3fb229a959ef241878ba6fd944e);
+            
+        
+
+        circle_marker_4d112761b9b40869de412ee86c438f04.bindPopup(popup_59753b0b3f3c3de5df01562cccd90367)
+        ;
+
+        
+    
+    
+            var circle_marker_bcbd22b3d779d8efe7f20419d49005d9 = L.circleMarker(
+                [51.0263, 13.71],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_e39c3bde674eaed45adca6417c79bf59);
+        
+    
+        var popup_3e340caf05b35b6a78319711aab09782 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_053d72e6421771c2262c93e7426dfd70 = $(`<div id="html_053d72e6421771c2262c93e7426dfd70" style="width: 100.0%; height: 100.0%;">Krankenhaus St. Joseph-Stift Plauen</div>`)[0];
+                popup_3e340caf05b35b6a78319711aab09782.setContent(html_053d72e6421771c2262c93e7426dfd70);
+            
+        
+
+        circle_marker_bcbd22b3d779d8efe7f20419d49005d9.bindPopup(popup_3e340caf05b35b6a78319711aab09782)
+        ;
+
+        
+    
+</script>
+</html>

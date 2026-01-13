@@ -1,0 +1,10 @@
+
+osmnx==1.9.2
+networkx==3.2.1
+folium==0.15.1
+matplotlib
+numpy>=1.21,<2.0
+geopy==2.4.1
+seaborn==0.13.1
+geopandas==0.14.2
+scikit-learn>=1.0.0

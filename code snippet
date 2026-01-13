@@ -1,0 +1,46 @@
+def heuristic(self, node1: int, node2: int) -> float:
+    lat1 = self.graph.nodes[node1]['y']
+    lon1 = self.graph.nodes[node1]['x']
+    lat2 = self.graph.nodes[node2]['y']
+    lon2 = self.graph.nodes[node2]['x']
+    return geodesic((lat1, lon1), (lat2, lon2)).meters
+
+def a_star(self, start_node: int, target_nodes: List[int]):
+    g_scores = {node: float('inf') for node in self.graph.nodes()}
+    g_scores[start_node] = 0
+    predecessors = {node: None for node in self.graph.nodes()}
+    visited = set()
+    
+    nearest_target = min(target_nodes, 
+                       key=lambda t: self.heuristic(start_node, t))
+    
+    f_score = self.heuristic(start_node, nearest_target)
+    pq = [(f_score, start_node)]
+    target_set = set(target_nodes)
+    
+    while pq:
+        _, current_node = heapq.heappop(pq)
+        
+        if current_node in visited:
+            continue
+        
+        visited.add(current_node)
+        
+        if current_node in target_set:
+            break
+        
+        for neighbor in self.graph.neighbors(current_node):
+            if neighbor in visited:
+                continue
+            
+            edge_data = self.graph.get_edge_data(current_node, neighbor)
+            weight = list(edge_data.values())[0].get('length', 100)
+            tentative_g = g_scores[current_node] + weight
+            
+            if tentative_g < g_scores[neighbor]:
+                g_scores[neighbor] = tentative_g
+                predecessors[neighbor] = current_node
+                f = tentative_g + self.heuristic(neighbor, nearest_target)
+                heapq.heappush(pq, (f, neighbor))
+    
+    return g_scores, predecessors
